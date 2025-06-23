@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const scriptTag = document.currentScript;
-  const apiUrl = scriptTag.getAttribute("data-api");
-  const targetSelector = scriptTag.getAttribute("data-target");
+  const { api: apiUrl, target: targetSelector } = document.currentScript.dataset;
+
   const target = document.querySelector(targetSelector);
 
   if (!target) {
@@ -11,7 +10,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     const response = await fetch(apiUrl);
-    if (!response.ok) throw new Error("Failed to fetch games JSON");
+
+    if (!response.ok)
+      throw new Error(`Failed to fetch games JSON: ${response.statusText}`);
+
     const games = await response.json();
 
     target.innerHTML = games.map(game => `
@@ -19,40 +21,40 @@ document.addEventListener("DOMContentLoaded", async () => {
         onclick="openGame('${game.url}')"
         style="
           cursor: pointer;
-          background: #ffff;
+          background: #ffffff;
           border-radius: 12px;
           padding: 12px;
           margin: 10px;
           display: inline-block;
           width: 200px;
           text-align: center;
-          color: white;
-          font-family: sans-serif;
-          transition: transform 0.2s;
         "
         onmouseenter="this.style.transform='scale(1.05)'"
         onmouseleave="this.style.transform='scale(1)'"
       >
-        <img src="${game.thumbnail}" alt="${game.title} thumbnail" style="width:100%; border-radius:8px;" />
-        <h3 style="margin-top:10px; font-size:18px;">${game.title}</h3>
+        <img src="${game.thumbnail}" alt="${game.title} thumbnail" style="width:100%; border-radius:8px; height: 120px; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/200x120/cccccc/333333?text=No+Image';" />
+        <h3 style="margin-top:10px; font-size:18px; color: #333333;">${game.title}</h3>
       </div>
     `).join("");
   } catch (err) {
-    target.innerHTML = "<p style='color:red'>Error loading games.</p>";
-    console.error(err);
+    target.innerHTML = "<p style='color:red; text-align: center; font-family: sans-serif;'>Error loading games. Please try again later.</p>";
+    console.error("Error loading games:", err);
   }
 });
 
-window.openGame = function(url) {
+window.openGame = (url) => {
   const modal = document.getElementById("gameModal");
   const iframe = document.getElementById("gameFrame");
   iframe.src = url;
-  modal.style.display = "block";
+  modal.style.display = "block"; 
+  document.body.style.overflow = 'hidden';
 };
 
-window.closeGame = function() {
+
+window.closeGame = () => {
   const modal = document.getElementById("gameModal");
   const iframe = document.getElementById("gameFrame");
   iframe.src = "";
   modal.style.display = "none";
+  document.body.style.overflow = '';
 };
