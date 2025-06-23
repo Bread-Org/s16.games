@@ -1,5 +1,7 @@
 # S16.games
 
+A cdn for games, made for UBG sites or proxies.
+
 ## Installation
 
 To use s16.games simply put this code in your html. 
