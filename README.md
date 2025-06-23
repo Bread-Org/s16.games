@@ -1,6 +1,6 @@
 # S16.games
 
-A gamecdn made for UBG sites and proxies.
+A free and easy to use gamecdn made for UBG sites and proxies.
 
 ## Installation
 
