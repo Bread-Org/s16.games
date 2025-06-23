@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         onclick="openGame('${game.url}')"
         style="
           cursor: pointer;
-          background: #111;
+          background: #ffff;
           border-radius: 12px;
           padding: 12px;
           margin: 10px;
@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", async () => {
           text-align: center;
           color: white;
           font-family: sans-serif;
-          box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
           transition: transform 0.2s;
         "
         onmouseenter="this.style.transform='scale(1.05)'"
