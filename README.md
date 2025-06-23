@@ -1,6 +1,6 @@
 # S16.games
 
-# Installation
+## Installation
 
 To use s16.games simply put this code in your html. 
 ```html
