@@ -10,11 +10,13 @@ To use s16.games simply put this code in your html.
 <script
   src="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/embed.js"
   <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
-  data-api="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/g.json"
+  data-api="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/g/"
   data-target="#gameContainer"
 ></script>
 ```
 
+
+<!--
 
 ## It doesnt work, what do i do?
  Try changing the script to this (this uses gitraw instead of jsdeliver)
@@ -22,13 +24,14 @@ To use s16.games simply put this code in your html.
 ```html
 <script
   src="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/embed.js"
-  <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
   data-api="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/gitraw.json"
   data-target="#gameContainer"
 ></script>
 
 <anyelementyouwant id="gameContainer"></anyelemtyouwant>
 ```
+-->
+
 ## Credits
 <a href="https://github.com/gustambolopez/s16.games/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=gustambolopez/s16.games" />
