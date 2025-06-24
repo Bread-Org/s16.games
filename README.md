@@ -11,16 +11,10 @@ To use s16.games simply put this code in your html.
   src="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/embed.js"
   <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
   data-api="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/g/"
+  <!-- IF IT DOESNT WORK TRY USING THIS ONE INSTEAD -->
+  data-api="https://raw.githack.com/gustambolopez/s16.games/main/g/"
   data-target="#gameContainer"
 ></script>
-```
-
-
-## It doesnt work, what do i do?
- Try changing the data api to this
-
-```html
- data-api="https://raw.githack.com/gustambolopez/s16.games/main/g/"
 ```
 
 ## Credits
