@@ -14,3 +14,10 @@ To use s16.games simply put this code in your html.
 
 <anyelementyouwant id="gameContainer"></anyelemtyouwant>
 ```
+
+## Contributors
+<a href="https://github.com/gustambolopez/s16.games/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=gustambolopez/s16.games" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
