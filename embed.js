@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 window.openGame = (apiUrl, alt) => {
   const modal = document.getElementById("gameModal");
   const iframe = document.getElementById("gameFrame");
-  iframe.src = `${apiUrl}/${alt}`;
+  iframe.src = `${apiUrl}/g/${alt}`;
   modal.style.display = "block"; 
   document.body.style.overflow = 'hidden';
 };
