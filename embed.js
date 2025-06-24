@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     target.innerHTML = games.map(game => `
       <div
-        onclick="openGame('${apiUrl}', '${game.title}')"
+        onclick="openGame('${apiUrl}', '${game.alt}')"
         style="
           cursor: pointer;
           background: #ffffff;
@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
-window.openGame = (apiUrl, title) => {
+window.openGame = (apiUrl, alt) => {
   const modal = document.getElementById("gameModal");
   const iframe = document.getElementById("gameFrame");
-  iframe.src = `${apiUrl}/${title}`;
+  iframe.src = `${apiUrl}/${alt}`;
   modal.style.display = "block"; 
   document.body.style.overflow = 'hidden';
 };
