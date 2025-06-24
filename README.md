@@ -16,21 +16,12 @@ To use s16.games simply put this code in your html.
 ```
 
 
-<!--
-
 ## It doesnt work, what do i do?
- Try changing the script to this (this uses gitraw instead of jsdeliver)
+ Try changing the data api to this
 
 ```html
-<script
-  src="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/embed.js"
-  data-api="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/gitraw.json"
-  data-target="#gameContainer"
-></script>
-
-<anyelementyouwant id="gameContainer"></anyelemtyouwant>
+ data-api="https://raw.githack.com/gustambolopez/s16.games/main/g/"
 ```
--->
 
 ## Credits
 
