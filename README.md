@@ -30,9 +30,9 @@ To use s16.games simply put this code in your html.
 <anyelementyouwant id="gameContainer"></anyelemtyouwant>
 ```
 ## Credits
-### This section contains all the people that contributed or were useful in this project
-
-#### -santiago16
+<a href="https://github.com/gustambolopez/s16.games/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=gustambolopez/s16.games" />
+</a>
 #### -testuserforlearning 
 #### -Echo: lots of games
 #### -Blaze (a tool coded by echo to get game files)
@@ -40,11 +40,5 @@ To use s16.games simply put this code in your html.
 ## Contributing
  To contribute simply contact me on discord s16dih or testuserforlearning
 
-
-
-## Contributors
-<a href="https://github.com/gustambolopez/s16.games/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=gustambolopez/s16.games" />
-</a>
 
 
