@@ -32,7 +32,8 @@ To use s16.games simply put this code in your html.
 ## Credits
 <a href="https://github.com/gustambolopez/s16.games/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=gustambolopez/s16.games" />
-</a>         (santiago16)
+</a>                              (santiago16)
+
 
  -testuserforlearning 
 - Echo/3kh0 - lots of games 
