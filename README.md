@@ -1,24 +1,50 @@
-# S16.games
+# s16.games
 
 A free and easy to use gamecdn made for UBG sites and proxies.
 
-## Installation
+## But, How do i use it?
+
 
 To use s16.games simply put this code in your html. 
 ```html
 <script
   src="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/embed.js"
   <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
-  data-api="https://cdn.jsdelivr.net/gh/gustambolopez/s16.ganes"
+  data-api="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/g.json"
+  data-target="#gameContainer"
+></script>
+```
+
+
+## It doesnt work, what do i do?
+ Try changing the script to this (this uses gitraw instead of jsdeliver)
+
+```html
+<script
+  src="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/embed.js"
+  <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
+  data-api="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/gitraw.json"
   data-target="#gameContainer"
 ></script>
 
 <anyelementyouwant id="gameContainer"></anyelemtyouwant>
 ```
+## Credits
+### This section contains all the people that contributed or were useful in this project
+
+#### -santiago16
+#### -testuserforlearning 
+#### -Echo: lots of games
+#### -Blaze (a tool coded by echo to get game files)
+
+## Contributing
+ To contribute simply contact me on discord s16dih or testuserforlearning
+
+
 
 ## Contributors
 <a href="https://github.com/gustambolopez/s16.games/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=gustambolopez/s16.games" />
 </a>
 
-Made with [contrib.rocks](https://contrib.rocks).
+
