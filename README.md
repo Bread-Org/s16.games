@@ -8,7 +8,8 @@ To use s16.games simply put this code in your html.
 ```html
 <script
   src="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/embed.js"
-  data-api="https://cdn.jsdelivr.net/gh/gustambolopez/s16.ganes/"
+  <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
+  data-api="https://cdn.jsdelivr.net/gh/gustambolopez/s16.ganes"
   data-target="#gameContainer"
 ></script>
 
