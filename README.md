@@ -9,9 +9,9 @@ To use s16.games simply put this code in your html.
 <script
   src="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/embed.js"
   <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
-  data-api="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/"
+ data-api="https://raw.githack.com/gustambolopez/s16.games/main/"
   <!-- IF IT DOESNT WORK TRY USING THIS ONE INSTEAD -->
-  data-api="https://raw.githack.com/gustambolopez/s16.games/main/"
+  data-api="https://cdn.githubraw.com/gustambolopez/s16.games/main/"
   data-target="#gameContainer"
 ></script>
 ```

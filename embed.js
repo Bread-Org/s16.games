@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         onmouseenter="this.style.transform='scale(1.05)'"
         onmouseleave="this.style.transform='scale(1)'"
       >
-        <img src="${apiUrl}/images/${game.alt}.webp" alt="${game.title} thumbnail" style="width:100%; border-radius:8px; height: 120px; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/200x120/cccccc/333333?text=No+Image';" />
+        <img src="${apiUrl}/images/${game.alt}.webp" alt="${game.title} thumbnail" style="width: clamp(50px, 120px, 240px); border-radius:8px; height: 120px; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/200x120/cccccc/333333?text=No+Image';" />
         <h3 style="margin-top:10px; font-size:18px; color: #333333;">${game.title}</h3>
       </div>
     `).join("");
