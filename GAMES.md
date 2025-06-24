@@ -2,9 +2,9 @@
 
 * [x] [Idle Factory Epmire](https://gustambolopez.github.io/s16.games/g/idle-factory-empire/index.html)
 * [x] [Idle Megamall Epmire](https://gustambolopez.github.io/s16.games/g/idle-megamall-empire/index.html)
-* [ ] [Idle Mining Epmire](https://gustambolopez.github.io/s16.games/g/idle-mining-empire/index.html)
-* [ ] [Idle Mole Epmire](https://gustambolopez.github.io/s16.games/g/idle-mole-empire/index.html)
-* [ ] [Idle Town Epmire](https://gustambolopez.github.io/s16.games/g/idle-town-empire/index.html)
+* [x] [Idle Mining Epmire](https://gustambolopez.github.io/s16.games/g/idle-mining-empire/index.html)
+* [x] [Idle Mole Epmire](https://gustambolopez.github.io/s16.games/g/idle-mole-empire/index.html)
+* [x] [Idle Town Epmire](https://gustambolopez.github.io/s16.games/g/idle-town-empire/index.html)
 * [x] [1](https://gustambolopez.github.io/s16.games/g/1/index.html)
 * [x] [1v1.LOL](https://gustambolopez.github.io/s16.games/g/1v1lol/index.html)
 * [x] [1v1 Space](https://gustambolopez.github.io/s16.games/g/1v1space/index.html)
