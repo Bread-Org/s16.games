@@ -1,4 +1,10 @@
 # Games
+
+* [ ] [Idle Factory Epmire](https://gustambolopez.github.io/s16.games/g/idle-factory-empire/index.html)
+* [ ] [Idle Megamall Epmire](https://gustambolopez.github.io/s16.games/g/idle-factory-empire/index.html)
+* [ ] [Idle Mining Epmire](https://gustambolopez.github.io/s16.games/g/idle-factory-empire/index.html)
+* [ ] [Idle Mole Epmire](https://gustambolopez.github.io/s16.games/g/idle-factory-empire/index.html)
+* [ ] [Idle Town Epmire](https://gustambolopez.github.io/s16.games/g/idle-factory-empire/index.html)
 * [x] [1](https://gustambolopez.github.io/s16.games/g/1/index.html)
 * [x] [1v1.LOL](https://gustambolopez.github.io/s16.games/g/1v1lol/index.html)
 * [x] [1v1 Space](https://gustambolopez.github.io/s16.games/g/1v1space/index.html)
@@ -195,6 +201,8 @@
 * [x] [Ice Age Baby 2](https://gustambolopez.github.io/s16.games/g/iceagebaby2/index.html)
 * [x] [Idle Breakout](https://gustambolopez.github.io/s16.games/g/idle-breakout/index.html)
 * [x] [Idle Dice](https://gustambolopez.github.io/s16.games/g/idledice/index.html)
+* [x] [Idle Hotel Empire](https://gustambolopez.github.io/s16.games/g/idle-hotel-empire/index.html)
+* [x] [Idle Hypermart Empire](https://gustambolopez.github.io/s16.games/g/idle-hypermart-empire/index.html)
 * [x] [Idle Dices](https://gustambolopez.github.io/s16.games/g/idledices/index.html)
 * [x] [Idle Shark](https://gustambolopez.github.io/s16.games/g/idle-shark/index.html)
 * [x] [Impossible Quiz](https://gustambolopez.github.io/s16.games/g/impossiblequiz/index.html)
