@@ -1,6 +1,6 @@
 # Games
 
-* [ ] [Idle Factory Epmire](https://gustambolopez.github.io/s16.games/g/idle-factory-empire/index.html)
+* [x] [Idle Factory Epmire](https://gustambolopez.github.io/s16.games/g/idle-factory-empire/index.html)
 * [ ] [Idle Megamall Epmire](https://gustambolopez.github.io/s16.games/g/idle-factory-empire/index.html)
 * [ ] [Idle Mining Epmire](https://gustambolopez.github.io/s16.games/g/idle-factory-empire/index.html)
 * [ ] [Idle Mole Epmire](https://gustambolopez.github.io/s16.games/g/idle-factory-empire/index.html)
