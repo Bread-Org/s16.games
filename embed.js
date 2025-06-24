@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     target.innerHTML = games.map(game => `
       <div
-        onclick="openGame('${game.url}')"
+        onclick="openGame('${apiUrl}', '${game.title}')"
         style="
           cursor: pointer;
           background: #ffffff;
@@ -32,20 +32,20 @@ document.addEventListener("DOMContentLoaded", async () => {
         onmouseenter="this.style.transform='scale(1.05)'"
         onmouseleave="this.style.transform='scale(1)'"
       >
-        <img src="${game.thumbnail}" alt="${game.title} thumbnail" style="width:100%; border-radius:8px; height: 120px; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/200x120/cccccc/333333?text=No+Image';" />
+        <img src="${apiUrl}/${game.title}.png" alt="${game.title} thumbnail" style="width:100%; border-radius:8px; height: 120px; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/200x120/cccccc/333333?text=No+Image';" />
         <h3 style="margin-top:10px; font-size:18px; color: #333333;">${game.title}</h3>
       </div>
     `).join("");
-  } catch (err) {
+  } catch (err) {$
     target.innerHTML = "<p style='color:red; text-align: center; font-family: sans-serif;'>Error loading games. Please try again later.</p>";
     console.error("Error loading games:", err);
   }
 });
 
-window.openGame = (url) => {
+window.openGame = (apiUrl, title) => {
   const modal = document.getElementById("gameModal");
   const iframe = document.getElementById("gameFrame");
-  iframe.src = url;
+  iframe.src = `${apiUrl}/${title}`;
   modal.style.display = "block"; 
   document.body.style.overflow = 'hidden';
 };
