@@ -40,7 +40,7 @@ To use s16.games simply put this code in your html.
 - [Blaze](https://github.com/embr-dev/blaze) - website downloader coded by Echo/3kh0 used to get game files
 
 ## Contributing
- To contribute simply contact me on discord [s16dih](https//discordapp.com/users/958708562035638362) or [testuserforlearning](https://discordapp.com/users/1208197331439063051)
+To contribute simply contact me on discord [s16dih](https//discordapp.com/users/958708562035638362) or [testuserforlearning](https://discordapp.com/users/1208197331439063051)
 
 
 
