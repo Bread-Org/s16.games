@@ -33,14 +33,11 @@ To use s16.games simply put this code in your html.
 -->
 
 ## Credits
-<a href="https://github.com/gustambolopez/s16.games/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=gustambolopez/s16.games" />
-</a>                              (santiago16)
 
-
- -testuserforlearning 
-- Echo/3kh0 - lots of games 
-= Blaze - website downloader coded by Echo/3kh0 used to get game files
+- [santiago16](https://github.com/gustambolopez)
+- [testuserforlearning](https://github.com/coding4hours)
+- [Echo/3kh0](https://github.com/3kh0) - lots of games 
+= [Blaze](https://github.com/embr-dev/blaze) - website downloader coded by Echo/3kh0 used to get game files
 
 ## Contributing
  To contribute simply contact me on discord s16dih or testuserforlearning
