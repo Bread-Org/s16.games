@@ -4,7 +4,6 @@ A free and easy to use gamecdn made for UBG sites and proxies.
 
 ## But, How do i use it?
 
-
 To use s16.games simply put this code in your html. 
 ```html
 <script
@@ -26,6 +25,3 @@ To use s16.games simply put this code in your html.
 
 ## Contributing
 To contribute simply contact me on discord [s16dih](https://discordapp.com/users/958708562035638362) or [testuserforlearning](https://discordapp.com/users/1208197331439063051)
-
-
-
