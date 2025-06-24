@@ -4,6 +4,10 @@
 - [x] 1v1.LOL
 - [x] Time Shooter 2
 - [x] Slope
+- [x] Repo
+- [x] Crazy cars 3d
+- [x] Crazy cattle 3d
+- [x] Buckshot-roulette
 - [x] Cookie Clicker
 - [x] Wordle
 - [x] PolyTrack 5
