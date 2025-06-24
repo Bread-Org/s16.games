@@ -52,8 +52,24 @@
         "alt": "piclient"
     },
     {
+        "title": "Crazy cattle3d",
+        "alt": "crazy-cattle3d"
+    },
+    {
+        "title": "Crazy Cars 3d",
+        "alt": "ccars3d"
+    },
+    {
         "title": "Pigeon Ascent",
         "alt": "pigeon-ascent"
+    },
+    {
+        "title": "Bad Parenting 1",
+        "alt": "badparenting"
+    },
+    {
+        "title": "Buckshot Roulette",
+        "alt": "buckshot-roulette"
     },
     {
         "title": "Pixel Gun Survival",
@@ -63,6 +79,11 @@
         "title": "Planet Life",
         "alt": "planetlife"
     },
+    {
+        "title": "R.E.P.O",
+        "alt": "repo"
+    },
+
     {
         "title": "Plants vs Zombies 1",
         "alt": "plants vs zombies 1"
