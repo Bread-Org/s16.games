@@ -287,3 +287,5 @@
 - [x] OVO
 - [x] Pandemic 2
 - [x] Papas Burgeria
+- [x] Starlink client
+- [x] Eaglercraft
