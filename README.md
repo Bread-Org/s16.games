@@ -34,9 +34,9 @@ To use s16.games simply put this code in your html.
   <img src="https://contrib.rocks/image?repo=gustambolopez/s16.games" />
 </a>
 
-#### -testuserforlearning 
-#### -Echo: lots of games
-#### -Blaze (a tool coded by echo to get game files)
+ -testuserforlearning 
+- Echo/3kh0 - lots of games 
+= Blaze - website downloader coded by Echo/3kh0 used to get game files
 
 ## Contributing
  To contribute simply contact me on discord s16dih or testuserforlearning
