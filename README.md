@@ -17,7 +17,7 @@ defer
 
   <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
   data-api="https://bread-org.github.io/s16.games"
-  data-api2="https://cdn.jsdelivr.net/gh/Bread-org/s16.chunk2/main"
+  data-api2="https://Bread-org.github.io/s16.chunk2"
 
   <!-- IF IT DOESNT WORK TRY USING THIS ONE INSTEAD -->
   data-api="https://raw.githack.com/Bread-org/s16.games/main"
