@@ -9,10 +9,8 @@
         return;
     }
 
-    // Set initial loading message
     targetElement.innerHTML = "<p style='text-align: center; font-family: sans-serif; color: #555;'>Loading games...</p>";
 
-    // Function to create and append game cards
     const createGameCards = (games, apiUrl) => {
         return games.map(game => `
             <div
@@ -41,7 +39,6 @@
     try {
         let allGamesHtml = "";
 
-        // Fetch from API 1
         const response1 = await fetch(`${api}/g.json`);
         if (!response1.ok) {
             throw new Error(`Failed to fetch games JSON from ${api}: ${response1.statusText}`);
@@ -49,7 +46,6 @@
         const games1 = await response1.json();
         allGamesHtml += createGameCards(games1, api);
 
-        // Fetch from API 2
         const response2 = await fetch(`${api2}/g.json`);
         if (!response2.ok) {
             throw new Error(`Failed to fetch games JSON from ${api2}: ${response2.statusText}`);
@@ -59,7 +55,6 @@
 
         targetElement.innerHTML = `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 10px;">${allGamesHtml}</div>`;
 
-        // Inject Modal HTML into the body (or a specific container)
         const modalHtml = `
             <div id="gameModal" style="
                 display: none;
@@ -117,14 +112,14 @@ window.openGame = (apiUrl, alt) => {
     const modal = document.getElementById("gameModal");
     const iframe = document.getElementById("gameFrame");
     iframe.src = `${apiUrl}/g/${alt}`;
-    modal.style.display = "flex"; // Changed to flex for centering
+    modal.style.display = "flex";
     document.body.style.overflow = 'hidden';
 };
 
 window.closeGame = () => {
     const modal = document.getElementById("gameModal");
     const iframe = document.getElementById("gameFrame");
-    iframe.src = ""; // Clear iframe source
+    iframe.src = "";
     modal.style.display = "none";
     document.body.style.overflow = '';
 };
