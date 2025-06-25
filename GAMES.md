@@ -303,3 +303,7 @@
 * [x] [Tomb of the Mask](https://gustambolopez.github.io/s16.games/g/tomb-of-the-mask/index.html)
 * [x] [Trimps](https://gustambolopez.github.io/s16.games/g/Trimps/index.html)
 * [x] [Wordle](https://gustambolopez.github.io/s16.games/g/wordle/index.html)
+* [x] [Spider Dude 3D](https://gustambolopez.github.io/s16.games/g/spiderdude/index.html)
+* [x] [Obby But Ur On A Bike](https://gustambolopez.github.io/s16.games/g/bikeobby/index.html)
+* [x] [Rainbow Friends: Return](https://gustambolopez.github.io/s16.games/g/rainbowfr/index.html)
+* [x] [Snow Rider 3D](https://gustambolopez.github.io/s16.games/g/snowrider3d/index.html)
