@@ -35,4 +35,4 @@ To contribute simply contact me on discord [s16dih](https://discordapp.com/users
 
 ## Oficial repositories:
 [s16.games](github.com/gustambolopez/s16.games).
-[s16.games (chunk 2)](github.com/gustambolopez/s16.chunk2)
+[s16.games (chunk 2)](https://github.com/gustambolopez/s16.chunk2)
