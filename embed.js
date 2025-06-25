@@ -1,20 +1,22 @@
-// document.addEventListener("DOMContentLoaded", 
-  (async () => {
-    const { api, api2, target: targetSelector } = document.currentScript.dataset;
+// document.addEventListener("DOMContentLoaded",
+(async () => {
+    const { api, api2, target: selectortarget } = document.currentScript.dataset;
 
-    const targetElement = document.querySelector(targetSelector);
+    const target = document.querySelector(selectortarget);
 
-    if (!targetElement) {
-        console.error("Target container not found:", targetSelector);
+    if (!target) {
+        console.error("Target container not found:", selectortarget);
         return;
     }
 
-    targetElement.innerHTML = "<p style='text-align: center; font-family: sans-serif; color: #555;'>Loading games...</p>";
+    let wierdstuff = "";
 
-    const createGameCards = (games, apiUrl) => {
+    target.innerHTML = "<p style='text-align: center; font-family: sans-serif; color: #555;'>Loading games...</p>";
+
+    const makecard = (games, apiUrl) => {
         return games.map(game => `
             <div
-                onclick="openGame('${apiUrl}', '${game.alt}')"
+                onclick="opengame('${apiUrl}', '${game.alt}', '${game.title}')"
                 style="
                     cursor: pointer;
                     background: #ffffff;
@@ -40,86 +42,79 @@
         let allGamesHtml = "";
 
         const response1 = await fetch(`${api}/g.json`);
-        if (!response1.ok) {
-            throw new Error(`Failed to fetch games JSON from ${api}: ${response1.statusText}`);
-        }
         const games1 = await response1.json();
-        allGamesHtml += createGameCards(games1, api);
+        allGamesHtml += makecard(games1, api);
 
         const response2 = await fetch(`${api2}/g.json`);
-        if (!response2.ok) {
-            throw new Error(`Failed to fetch games JSON from ${api2}: ${response2.statusText}`);
-        }
         const games2 = await response2.json();
-        allGamesHtml += createGameCards(games2, api2);
+        allGamesHtml += makecard(games2, api2);
 
-        targetElement.innerHTML = `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 10px;">${allGamesHtml}</div>`;
+        wierdstuff = `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 10px;">${allGamesHtml}</div>`;
+        target.innerHTML = wierdstuff;
 
-        const modalHtml = `
-            <div id="gameModal" style="
+        const gamePageContainerHtml = `
+            <div id="gamePageContainer" style="
                 display: none;
                 position: fixed;
-                z-index: 1000;
-                left: 0;
                 top: 0;
+                left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: rgba(0,0,0,0.8);
-                display: flex;
-                justify-content: center;
+                background-color: #fff;
+                z-index: 999;
+                flex-direction: column;
                 align-items: center;
+                justify-content: flex-start;
+                padding: 20px;
+                box-sizing: border-box;
             ">
-                <div style="
-                    background-color: #fefefe;
-                    padding: 20px;
-                    border-radius: 12px;
-                    width: 90%;
-                    max-width: 900px;
-                    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    height: 90%;
-                ">
-                    <span onclick="closeGame()" style="
-                        color: #aaa;
-                        position: absolute;
-                        top: 10px;
-                        right: 20px;
-                        font-size: 28px;
-                        font-weight: bold;
-                        cursor: pointer;
-                    ">&times;</span>
-                    <iframe id="gameFrame" style="
-                        width: 100%;
-                        flex-grow: 1;
-                        border: none;
-                        border-radius: 8px;
-                    " allowfullscreen></iframe>
-                </div>
+                <button onclick="closegame()" style="
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    z-index: 1001; /* Ensure button is above iframe */
+                ">Back to Games</button>
+                <h2 id="gamePageTitle" style="color: #333; margin-top: 60px; margin-bottom: 20px;"></h2>
+                <iframe id="gamePageFrame" style="
+                    width: 100%;
+                    flex-grow: 1;
+                    border: none;
+                    border-radius: 8px;
+                " allowfullscreen></iframe>
             </div>
         `;
-        document.body.insertAdjacentHTML('beforeend', modalHtml);
-
+        document.body.insertAdjacentHTML('beforeend', gamePageContainerHtml);
 
     } catch (err) {
-        targetElement.innerHTML = "<p style='color:red; text-align: center; font-family: sans-serif;'>Error loading games. Please try again later.</p>";
+        target.innerHTML = "<p style='color:red; text-align: center; font-family: sans-serif;'>Error loading games. Please try again later.</p>";
         console.error("Error loading games:", err);
     }
+
+    window.opengame = (apiUrl, alt, title) => {
+        const gamePageContainer = document.getElementById("gamePageContainer");
+        const gamePageFrame = document.getElementById("gamePageFrame");
+        const gamePageTitle = document.getElementById("gamePageTitle");
+
+        gamePageTitle.textContent = title;
+        gamePageFrame.src = `${apiUrl}/g/${alt}`;
+        gamePageContainer.style.display = "flex";
+        document.body.style.overflow = 'hidden';
+    };
+
+    window.closegame = () => {
+        const gamePageContainer = document.getElementById("gamePageContainer");
+        const gamePageFrame = document.getElementById("gamePageFrame");
+
+        gamePageFrame.src = ""; 
+        gamePageContainer.style.display = "none";
+        document.body.style.overflow = '';
+    };
+
 })();
-
-window.openGame = (apiUrl, alt) => {
-    const modal = document.getElementById("gameModal");
-    const iframe = document.getElementById("gameFrame");
-    iframe.src = `${apiUrl}/g/${alt}`;
-    modal.style.display = "flex";
-    document.body.style.overflow = 'hidden';
-};
-
-window.closeGame = () => {
-    const modal = document.getElementById("gameModal");
-    const iframe = document.getElementById("gameFrame");
-    iframe.src = "";
-    modal.style.display = "none";
-    document.body.style.overflow = '';
-};
