@@ -37,12 +37,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       </div>
     `).join("");
 
-        const response = await fetch(apiUrl2);
+        const response2 = await fetch(apiUrl2);
 
-    if (!response.ok)
-      throw new Error(`Failed to fetch games JSON: ${response.statusText}`);
+    if (!response2.ok)
+      throw new Error(`Failed to fetch games JSON: ${response2.statusText}`);
 
-    const gamess = await response.json();
+    const gamess = await response2.json();
 
     target.innerHTML = target.innerHTML+ gamess.map(game => `
       <div
