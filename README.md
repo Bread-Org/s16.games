@@ -1,6 +1,8 @@
 # [s16.games](https://gustambolopez.github.io/s16.games/)
 
 A free and easy to use gamecdn made for UBG sites and proxies.
+> [!IMPORTANT]
+> If ur gonna use it in your site make sure to give credits!
 
 ## But, How do i use it?
 
