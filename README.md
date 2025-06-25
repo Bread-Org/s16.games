@@ -12,7 +12,7 @@ A free and easy to use gamecdn made for UBG sites and proxies.
 To use s16.games simply put this code in your html. 
 ```html
 <script
-defer
+  defer
   src="https://cdn.jsdelivr.net/gh/Bread-org/s16.games/embed.js"
 
   <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
@@ -38,6 +38,7 @@ defer
 - [Echo/3kh0](https://github.com/3kh0) - lots of games and blaze
 - [Blaze](https://github.com/embr-dev/blaze) - website downloader coded by Echo/3kh0 used to get game files
 - [Network Zipper](https://github.com/idk) - website downloader coded by the people at gn-math.github.io
+- [Ultimate Game Stash](https://docs.google.com/document/d/1_FmH3BlSBQI7FGgAQL59-ZPe8eCxs35wel6JUyVaG8Q/) - were gonna steal some games
 
 ## Contributing
 To contribute simply contact me on discord [s16dih](https://discordapp.com/users/958708562035638362) or [testuserforlearning](https://discordapp.com/users/1208197331439063051)
