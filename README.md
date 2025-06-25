@@ -2,7 +2,7 @@
 
 A free and easy to use gamecdn made for UBG sites and proxies.
 > [!IMPORTANT]
-> If ur gonna use it in your site make sure to give credits!
+> If ur gonna use it in your site make sure to give credits! this repository is published under the Apache Public License v2 so you are required to.
 
 ## But, How do i use it?
 > [!WARNING]
@@ -32,3 +32,7 @@ To use s16.games simply put this code in your html.
 
 ## Contributing
 To contribute simply contact me on discord [s16dih](https://discordapp.com/users/958708562035638362) or [testuserforlearning](https://discordapp.com/users/1208197331439063051)
+
+## Oficial repositories:
+[s16.games](github.com/gustambolopez/s16.games).
+[s16.games (chunk 2)](github.com/gustambolopez/s16.chunk2).
