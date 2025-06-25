@@ -23,14 +23,6 @@
         "title": "2048",
         "alt": "2048"
     },
-    {  
-        "title": "Rainbow Friends: Return",
-        "alt": "rainbowfr"
-    },
-    {  
-        "title": "Obby But Ur On A Bike",
-        "alt": "bikeobby"
-    },
     {
         "title": "2048 Multitask",
         "alt": "2048-multitask"
@@ -38,14 +30,6 @@
     {
         "title": "99 Balls",
         "alt": "99balls"
-    },
-    {
-        "title": "Spider Dude",
-        "alt": "spiderdude"
-    },
-    {
-        "title": "Snow Rider 3d",
-        "alt": "snowrider3d"
     },
     {
         "title": "9007199254740992",
@@ -144,7 +128,7 @@
         "alt": "bad-ice-cream-3"
     },
     {
-        "title": "Bad Parenting 1",
+        "title": "Bad Parenting",
         "alt": "badparenting"
     },
     {
@@ -160,10 +144,6 @@
         "alt": "ballistic-chickens"
     },
     {
-        "title": "Basketball Stars",
-        "alt": "basketball-stars"
-    },
-    {
         "title": "Basket Bros IO",
         "alt": "basketbros-io"
     },
@@ -172,12 +152,20 @@
         "alt": "basket-random"
     },
     {
+        "title": "Basketball Stars",
+        "alt": "basketball-stars"
+    },
+    {
         "title": "Battle For Gondor",
         "alt": "battleforgondor"
     },
     {
         "title": "Big Red Button",
         "alt": "bigredbutton"
+    },
+    {
+        "title": "Bike Obby",
+        "alt": "bikeobby"
     },
     {
         "title": "BitLife",
@@ -212,6 +200,18 @@
         "alt": "bntts"
     },
     {
+        "title": "BTD4",
+        "alt": "btd4"
+    },
+    {
+        "title": "BTD5",
+        "alt": "btd5"
+    },
+    {
+        "title": "BTTS",
+        "alt": "btts"
+    },
+    {
         "title": "Bob The Robber 2",
         "alt": "bobtherobber2"
     },
@@ -228,20 +228,12 @@
         "alt": "boxing-random"
     },
     {
+        "title": "Brawl Stars",
+        "alt": "brawlstars"
+    },
+    {
         "title": "Breaking The Bank",
         "alt": "breakingthebank"
-    },
-    {
-        "title": "BTD4",
-        "alt": "btd4"
-    },
-    {
-        "title": "BTD5",
-        "alt": "btd5"
-    },
-    {
-        "title": "BTTS",
-        "alt": "btts"
     },
     {
         "title": "Buckshot Roulette",
@@ -332,11 +324,11 @@
         "alt": "craftmine"
     },
     {
-        "title": "Crazy Cars 3d",
+        "title": "Crazy Cars 3D",
         "alt": "ccars3d"
     },
     {
-        "title": "Crazy cattle3d",
+        "title": "Crazy Cattle 3D",
         "alt": "crazy-cattle3d"
     },
     {
@@ -400,6 +392,10 @@
         "alt": "dodge"
     },
     {
+        "title": "Doge 2048",
+        "alt": "doge2048"
+    },
+    {
         "title": "Doge Miner",
         "alt": "DogeMiner"
     },
@@ -408,15 +404,11 @@
         "alt": "Dogeminer2"
     },
     {
-        "title": "Doge 2048",
-        "alt": "doge2048"
-    },
-    {
         "title": "Doom",
         "alt": "doom"
     },
     {
-        "title": "Doomori",
+        "title": "DOOMORI",
         "alt": "DOOMORI"
     },
     {
@@ -584,6 +576,10 @@
         "alt": "fnaw"
     },
     {
+        "title": "Friday Night Funkin",
+        "alt": "fridaynightfunkin"
+    },
+    {
         "title": "Froggy's Battle",
         "alt": "froggys-battle"
     },
@@ -602,10 +598,6 @@
     {
         "title": "FU Client",
         "alt": "fuclient"
-    },
-    {
-        "title": "Friday Night Funkin",
-        "alt": "fridaynightfunkin"
     },
     {
         "title": "Gacha Life",
@@ -792,8 +784,36 @@
         "alt": "idledices"
     },
     {
+        "title": "Idle Factory Empire",
+        "alt": "idle-factory-empire"
+    },
+    {
+        "title": "Idle Hotel Empire",
+        "alt": "idle-hotel-empire"
+    },
+    {
+        "title": "Idle Hypermart Empire",
+        "alt": "idle-hypermart-empire"
+    },
+    {
+        "title": "Idle Megamall Empire",
+        "alt": "idle-megamall-empire"
+    },
+    {
+        "title": "Idle Mining Empire",
+        "alt": "idle-mining-empire"
+    },
+    {
+        "title": "Idle Mole Empire",
+        "alt": "idle-mole-empire"
+    },
+    {
         "title": "Idle Shark",
         "alt": "idle-shark"
+    },
+    {
+        "title": "Idle Town Billionaire",
+        "alt": "idle-town-billionaire"
     },
     {
         "title": "Impossible Quiz",
@@ -812,12 +832,12 @@
         "alt": "iron-dash"
     },
     {
-        "title": "Jetpack Joyride",
-        "alt": "jetpack-joyride"
-    },
-    {
         "title": "JS",
         "alt": "js"
+    },
+    {
+        "title": "Jetpack Joyride",
+        "alt": "jetpack-joyride"
     },
     {
         "title": "Just Fall",
@@ -848,6 +868,14 @@
         "alt": "krunker"
     },
     {
+        "title": "LTF 3",
+        "alt": "ltf3"
+    },
+    {
+        "title": "LTF Idle",
+        "alt": "ltf-idle"
+    },
+    {
         "title": "Learn To Fly",
         "alt": "learntofly"
     },
@@ -866,14 +894,6 @@
     {
         "title": "Line Rider",
         "alt": "linerider"
-    },
-    {
-        "title": "LTF 3",
-        "alt": "ltf3"
-    },
-    {
-        "title": "LTF Idle",
-        "alt": "ltf-idle"
     },
     {
         "title": "Madalin Stunt Cars 2",
@@ -938,10 +958,6 @@
     {
         "title": "Minecraft Tower Defence",
         "alt": "minecrafttowerdefence"
-    },
-    {
-        "title": "Mindustry",
-        "alt": "mindustry"
     },
     {
         "title": "Minesweeper",
@@ -1044,6 +1060,10 @@
         "alt": "papasburgeria"
     },
     {
+        "title": "Papas Pizzaria",
+        "alt": "papaspizzaria"
+    },
+    {
         "title": "Paper.io 2",
         "alt": "paperio2"
     },
@@ -1120,16 +1140,16 @@
         "alt": "repo"
     },
     {
+        "title": "Rainbow Friends",
+        "alt": "rainbowfr"
+    },
+    {
         "title": "Rabbit Samurai",
         "alt": "rabbit-samurai"
     },
     {
         "title": "Rabbit Samurai 2",
         "alt": "rabbit-samurai2"
-    },
-    {
-        "title": "Robux Clicker",
-        "alt": "robuxclicker"
     },
     {
         "title": "Rocket League",
@@ -1154,6 +1174,14 @@
     {
         "title": "Slope 2",
         "alt": "slope-2"
+    },
+    {
+        "title": "Snow Rider 3D",
+        "alt": "snowrider3d"
+    },
+    {
+        "title": "Spider Dude",
+        "alt": "spiderdude"
     },
     {
         "title": "Starlink Client",

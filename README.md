@@ -1,8 +1,13 @@
 # [s16.games](https://gustambolopez.github.io/s16.games/)
 
 A free and easy to use gamecdn made for UBG sites and proxies.
+> [!IMPORTANT]
+> If ur gonna use it in your site make sure to give credits! this repository is published under the Apache Public License v2 so you are required to.
 
 ## But, How do i use it?
+> [!WARNING]
+> This repo only contains half of the game for storage issues [s16.games](https://gustambolopez.github.io/s16.games/).
+> This repo will no longer be updated (in the games part, this will still be the main repo) as we exceded the github limit 4gb, now its gonna be divided in chunks.
 
 To use s16.games simply put this code in your html. 
 ```html
@@ -10,8 +15,10 @@ To use s16.games simply put this code in your html.
   src="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/embed.js"
   <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
  data-api="https://raw.githack.com/gustambolopez/s16.games/main/"
+ data-api="https://raw.githack.com/gustambolopez/s16.chunk2/main/"
   <!-- IF IT DOESNT WORK TRY USING THIS ONE INSTEAD -->
   data-api="https://cdn.githubraw.com/gustambolopez/s16.games/main/"
+  data-api="https://cdn.githubraw.com/gustambolopez/s16.chunk2/main/"
   data-target="#gameContainer"
 ></script>
 ```
@@ -25,3 +32,7 @@ To use s16.games simply put this code in your html.
 
 ## Contributing
 To contribute simply contact me on discord [s16dih](https://discordapp.com/users/958708562035638362) or [testuserforlearning](https://discordapp.com/users/1208197331439063051)
+
+## Oficial repositories:
+[s16.games](github.com/gustambolopez/s16.games).
+[s16.games (chunk 2)](https://github.com/gustambolopez/s16.chunk2)
