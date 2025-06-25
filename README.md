@@ -12,13 +12,13 @@ A free and easy to use gamecdn made for UBG sites and proxies.
 To use s16.games simply put this code in your html. 
 ```html
 <script
-  src="https://cdn.jsdelivr.net/gh/gustambolopez/s16.games/embed.js"
+  src="https://cdn.jsdelivr.net/gh/Bread-org/s16.games/embed.js"
   <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
- data-api="https://raw.githack.com/gustambolopez/s16.games/main/"
- data-api="https://raw.githack.com/gustambolopez/s16.chunk2/main/"
+  data-api="https://raw.githack.com/Bread-org/s16.games/main/"
+  data-api2="https://raw.githack.com/Bread-org/s16.chunk2/main/"
   <!-- IF IT DOESNT WORK TRY USING THIS ONE INSTEAD -->
-  data-api="https://cdn.githubraw.com/gustambolopez/s16.games/main/"
-  data-api="https://cdn.githubraw.com/gustambolopez/s16.chunk2/main/"
+  data-api="https://cdn.githubraw.com/Bread-org/s16.games/main/"
+  data-api2="https://cdn.githubraw.com/Bread-org/s16.chunk2/main/"
   data-target="#gameContainer"
 ></script>
 ```
@@ -34,5 +34,5 @@ To use s16.games simply put this code in your html.
 To contribute simply contact me on discord [s16dih](https://discordapp.com/users/958708562035638362) or [testuserforlearning](https://discordapp.com/users/1208197331439063051)
 
 ## Oficial repositories:
-[s16.games](github.com/gustambolopez/s16.games).
-[s16.games (chunk 2)](https://github.com/gustambolopez/s16.chunk2)
+[s16.games](github.com/Bread-org/s16.games).
+[s16.games (chunk 2)](https://github.com/Bread-org/s16.chunk2)

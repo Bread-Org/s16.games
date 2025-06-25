@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const { api: apiUrl, target: targetSelector } = document.currentScript.dataset;
+  const { api: apiUrl, api2: apiUrl2, target: targetSelector } = document.currentScript.dataset;
 
   const target = document.querySelector(targetSelector);
 
@@ -36,7 +36,35 @@ document.addEventListener("DOMContentLoaded", async () => {
         <h3 style="margin-top:10px; font-size:18px; color: #333333;">${game.title}</h3>
       </div>
     `).join("");
-  } catch (err) {$
+
+        const response = await fetch(apiUrl2);
+
+    if (!response.ok)
+      throw new Error(`Failed to fetch games JSON: ${response.statusText}`);
+
+    const gamess = await response.json();
+
+    target.innerHTML = target.innerHTML+ gamess.map(game => `
+      <div
+        onclick="openGame('${apiUrl2}', '${game.alt}')"
+        style="
+          cursor: pointer;
+          background: #ffffff;
+          border-radius: 12px;
+          padding: 12px;
+          margin: 10px;
+          display: inline-block;
+          width: 200px;
+          text-align: center;
+        "
+        onmouseenter="this.style.transform='scale(1.05)'"
+        onmouseleave="this.style.transform='scale(1)'"
+      >
+        <img src="${apiUrl2}/images/${game.alt}.webp" alt="${game.title} thumbnail" style="width: clamp(50px, 120px, 240px); border-radius:8px; height: 120px; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/200x120/cccccc/333333?text=No+Image';" />
+        <h3 style="margin-top:10px; font-size:18px; color: #333333;">${game.title}</h3>
+      </div>
+    `).join("");
+  } catch (err) {
     target.innerHTML = "<p style='color:red; text-align: center; font-family: sans-serif;'>Error loading games. Please try again later.</p>";
     console.error("Error loading games:", err);
   }
