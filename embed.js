@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const { api: apiUrl, api2: apiUrl2, target: targetSelector } = document.currentScript.dataset;
+  const { apiUrl: api, apiUrl2: api2, targetSelector: target } = document.currentScript.dataset;
 
   const target = document.querySelector(targetSelector);
 
