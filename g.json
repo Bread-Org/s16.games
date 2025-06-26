@@ -1,187 +1,23 @@
 [
     {
-        "title": "PolyTrack OG",
-        "alt": "polytrack-og"
-    },
-    {
-        "title": "1v1.LOL",
-        "alt": "1v1lol"
-    },
-    {
-        "title": "Time Shooter 2",
-        "alt": "timeshooter2"
-    },
-    {
-        "title": "Slope",
-        "alt": "slope"
-    },
-    {
-        "title": "Cookie Clicker",
-        "alt": "cookie-clicker"
-    },
-    {
-        "title": "Wordle",
-        "alt": "wordle"
-    },
-    {
-        "title": "PolyTrack 5",
-        "alt": "polytrack-5"
-    },
-    {
-        "title": "Papas Pizzaria",
-        "alt": "papaspizzaria"
-    },
-    {
-        "title": "Paper.io 2",
-        "alt": "paperio2"
-    },
-    {
-        "title": "Papery Planes",
-        "alt": "papery-planes"
-    },
-    {
-        "title": "Particle Clicker",
-        "alt": "particleclicker"
-    },
-    {
-        "title": "Particle Clicker",
-        "alt": "particle-clicker"
-    },
-    {
-        "title": "PI Client",
-        "alt": "piclient"
-    },
-    {
-        "title": "Crazy cattle3d",
-        "alt": "crazy-cattle3d"
-    },
-    {
-        "title": "Crazy Cars 3d",
-        "alt": "ccars3d"
-    },
-    {
-        "title": "Pigeon Ascent",
-        "alt": "pigeon-ascent"
-    },
-    {
-        "title": "Bad Parenting 1",
-        "alt": "badparenting"
-    },
-    {
-        "title": "Buckshot Roulette",
-        "alt": "buckshot-roulette"
-    },
-    {
-        "title": "Pixel Gun Survival",
-        "alt": "pixel-gun-survival"
-    },
-    {
-        "title": "Planet Life",
-        "alt": "planetlife"
-    },
-    {
-        "title": "R.E.P.O",
-        "alt": "repo"
-    },
-    {
-        "title": "Brawl stars",
-        "alt": "brawlstars"
-    },
-    {
-        "title": "Plants vs Zombies 1",
-        "alt": "plants vs zombies 1"
-    },
-    {
-        "title": "Polybranch",
-        "alt": "polybranch"
-    },
-    {
-        "title": "Poom",
-        "alt": "poom"
-    },
-    {
-        "title": "Popcat Classic",
-        "alt": "popcat-classic"
-    },
-    {
-        "title": "Portal Flash",
-        "alt": "portalflash"
-    },
-    {
-        "title": "Precision Client",
-        "alt": "precision-client"
-    },
-    {
-        "title": "Protektor",
-        "alt": "protektor"
-    },
-    {
-        "title": "Push The Square",
-        "alt": "push-the-square"
-    },
-    {
-        "title": "Push Your Luck",
-        "alt": "push-your-luck"
-    },
-    {
-        "title": "Rabbit Samurai",
-        "alt": "rabbit-samurai"
-    },
-    {
-        "title": "Rabbit Samurai 2",
-        "alt": "rabbit-samurai2"
-    },
-    {
-        "title": "Robux Clicker",
-        "alt": "robuxclicker"
-    },
-    {
-        "title": "Rocket League",
-        "alt": "Rocket-League"
-    },
-    {
-        "title": "Rolling Forests",
-        "alt": "rolling-forests"
-    },
-    {
-        "title": "Run 2",
-        "alt": "Run 2"
-    },
-    {
-        "title": "Shape Shootout",
-        "alt": "ShapeShootout"
-    },
-    {
-        "title": "Stickman Survival",
-        "alt": "Stickman-Survival"
-    },
-    {
-        "title": "Tomb of the Mask",
-        "alt": "tomb-of-the-mask"
-    },
-    {
-        "title": "Trimps",
-        "alt": "Trimps"
-    },
-    {
         "title": "1",
         "alt": "1"
-    },
-    {
-        "title": "1v1 Space",
-        "alt": "1v1space"
     },
     {
         "title": "10 Minutes Till Dawn",
         "alt": "10-minutes-till-dawn"
     },
     {
-        "title": "99 Balls",
-        "alt": "99balls"
-    },
-    {
         "title": "100NG",
         "alt": "100ng"
+    },
+    {
+        "title": "1v1 Space",
+        "alt": "1v1space"
+    },
+    {
+        "title": "1v1.LOL",
+        "alt": "1v1lol"
     },
     {
         "title": "2048",
@@ -196,8 +32,8 @@
         "alt": "9007199254740992"
     },
     {
-        "title": "Achievement Unlocked",
-        "alt": "achievementunlocked"
+        "title": "99 Balls",
+        "alt": "99balls"
     },
     {
         "title": "A Dance of Fire and Ice",
@@ -206,6 +42,10 @@
     {
         "title": "A Dark Room",
         "alt": "adarkroom"
+    },
+    {
+        "title": "Achievement Unlocked",
+        "alt": "achievementunlocked"
     },
     {
         "title": "Adrenaline Challenge",
@@ -220,12 +60,12 @@
         "alt": "ages-of-conflict"
     },
     {
-        "title": "Alien Hominid",
-        "alt": "alienhominid"
-    },
-    {
         "title": "Align 4",
         "alt": "align-4"
+    },
+    {
+        "title": "Alien Hominid",
+        "alt": "alienhominid"
     },
     {
         "title": "Amazing Rope Police",
@@ -269,10 +109,6 @@
     },
     {
         "title": "Backrooms 2D",
-        "alt": "backrooms2d"
-    },
-    {
-        "title": "Backrooms 2D",
         "alt": "backrooms-2d"
     },
     {
@@ -292,6 +128,10 @@
         "alt": "bad-ice-cream-3"
     },
     {
+        "title": "Bad Parenting",
+        "alt": "badparenting"
+    },
+    {
         "title": "Baldi's Basics",
         "alt": "baldis-basics"
     },
@@ -304,8 +144,16 @@
         "alt": "ballistic-chickens"
     },
     {
-        "title": "Basketball Stars",
-        "alt": "basketball-stars"
+        "title": "Bank Robber",
+        "alt": "bankrobber"
+    },
+    {
+        "title": "Bank Robber 2",
+        "alt": "bankrobber2"
+    },
+    {
+        "title": "Bank Robber 3",
+        "alt": "bankrobber3"
     },
     {
         "title": "Basket Bros IO",
@@ -316,6 +164,10 @@
         "alt": "basket-random"
     },
     {
+        "title": "Basketball Stars",
+        "alt": "basketball-stars"
+    },
+    {
         "title": "Battle For Gondor",
         "alt": "battleforgondor"
     },
@@ -324,12 +176,20 @@
         "alt": "bigredbutton"
     },
     {
+        "title": "Bike Obby",
+        "alt": "bikeobby"
+    },
+    {
         "title": "BitLife",
         "alt": "bitlife"
     },
     {
         "title": "Blachole Square",
         "alt": "blacholesquare"
+    },
+    {
+        "title": "Blade Ball",
+        "alt": "bladeball"
     },
     {
         "title": "Black Knight",
@@ -360,6 +220,10 @@
         "alt": "bobtherobber2"
     },
     {
+        "title": "Body Cam Shooter",
+        "alt": "bodycamshooter"
+    },
+    {
         "title": "Bonk.io",
         "alt": "bonkio"
     },
@@ -370,6 +234,10 @@
     {
         "title": "Boxing Random",
         "alt": "boxing-random"
+    },
+    {
+        "title": "Brawl stars",
+        "alt": "brawlstars"
     },
     {
         "title": "Breaking The Bank",
@@ -388,12 +256,48 @@
         "alt": "btts"
     },
     {
+        "title": "Buckshot Roulette",
+        "alt": "buckshot-roulette"
+    },
+    {
         "title": "Burger and Frights",
         "alt": "burger-and-frights"
     },
     {
         "title": "Bus and Subway",
-        "alt": "bus and subway"
+        "alt": "bus-and-subway"
+    },
+    {
+        "title": "CN Ping Pong",
+        "alt": "cnpingpong"
+    },
+    {
+        "title": "CMM Client",
+        "alt": "CMM Client"
+    },
+    {
+        "title": "CS Deathmatch",
+        "alt": "csdeathmatch"
+    },
+    {
+        "title": "CS Parkour",
+        "alt": "csparkour"
+    },
+    {
+        "title": "CSGO Clicker",
+        "alt": "csgo-clicker"
+    },
+    {
+        "title": "CTR",
+        "alt": "ctr"
+    },
+    {
+        "title": "CTR Holiday",
+        "alt": "ctr-holiday"
+    },
+    {
+        "title": "CTR TR",
+        "alt": "ctr-tr"
     },
     {
         "title": "Cannon Basketball 4",
@@ -432,8 +336,8 @@
         "alt": "chill-radio"
     },
     {
-        "title": "Chrome Dino",
-        "alt": "chromedino"
+        "title": "Cho Cho Charles",
+        "alt": "chochocharles"
     },
     {
         "title": "Chrome Dino",
@@ -452,16 +356,12 @@
         "alt": "cluster-rush"
     },
     {
-        "title": "CMM Client",
-        "alt": "CMM Client"
-    },
-    {
-        "title": "CN Ping Pong",
-        "alt": "cnpingpong"
-    },
-    {
         "title": "Connect 3",
         "alt": "connect3"
+    },
+    {
+        "title": "Cookie Clicker",
+        "alt": "cookie-clicker"
     },
     {
         "title": "Core Ball",
@@ -472,28 +372,20 @@
         "alt": "craftmine"
     },
     {
+        "title": "Crazy Cars 3d",
+        "alt": "ccars3d"
+    },
+    {
+        "title": "Crazy cattle3d",
+        "alt": "crazy-cattle3d"
+    },
+    {
         "title": "Creative Kill Chamber",
         "alt": "creativekillchamber"
     },
     {
         "title": "Crossy Road",
         "alt": "crossyroad"
-    },
-    {
-        "title": "CSGO Clicker",
-        "alt": "csgo-clicker"
-    },
-    {
-        "title": "CTR",
-        "alt": "ctr"
-    },
-    {
-        "title": "CTR Holiday",
-        "alt": "ctr-holiday"
-    },
-    {
-        "title": "CTR TR",
-        "alt": "ctr-tr"
     },
     {
         "title": "Cubefield",
@@ -510,6 +402,10 @@
     {
         "title": "Deal or No Deal",
         "alt": "deal-or-no-deal"
+    },
+    {
+        "title": "Death Rails",
+        "alt": "deathrails"
     },
     {
         "title": "Death Run 3D",
@@ -544,16 +440,16 @@
         "alt": "Dogeminer2"
     },
     {
-        "title": "Doodle Jump",
-        "alt": "doodle-jump"
-    },
-    {
         "title": "Doom",
         "alt": "doom"
     },
     {
         "title": "Doomori",
         "alt": "DOOMORI"
+    },
+    {
+        "title": "Doodle Jump",
+        "alt": "doodle-jump"
     },
     {
         "title": "Double Wires",
@@ -610,6 +506,10 @@
     {
         "title": "Eagler JP",
         "alt": "eaglerjp"
+    },
+    {
+        "title": "Eaglercraft",
+        "alt": "eaglercraft"
     },
     {
         "title": "Earn To Die",
@@ -680,10 +580,6 @@
         "alt": "fireboywatergirlforesttemple"
     },
     {
-        "title": "Flappy Plane",
-        "alt": "flappy plane"
-    },
-    {
         "title": "Flappy 2048",
         "alt": "flappy-2048"
     },
@@ -694,6 +590,10 @@
     {
         "title": "Flappy Bird",
         "alt": "flappy-bird"
+    },
+    {
+        "title": "Flappy Plane",
+        "alt": "flappy-plane"
     },
     {
         "title": "Flash Tetris",
@@ -716,7 +616,7 @@
         "alt": "fridaynightfunkin"
     },
     {
-        "title": "Froggy's Battle",
+        "title": "Froggys Battle",
         "alt": "froggys-battle"
     },
     {
@@ -728,11 +628,11 @@
         "alt": "frying-nemo"
     },
     {
-        "title": "FSU Craft",
+        "title": "FSUCraft",
         "alt": "fsucraft"
     },
     {
-        "title": "FU Client",
+        "title": "FUClient",
         "alt": "fuclient"
     },
     {
@@ -748,7 +648,7 @@
         "alt": "gdtd"
     },
     {
-        "title": "Gears of Babies",
+        "title": "Gears Of Babies",
         "alt": "gearsofbabies"
     },
     {
@@ -788,7 +688,7 @@
         "alt": "georash"
     },
     {
-        "title": "George and The Printer",
+        "title": "George And The Printer",
         "alt": "georgeandtheprinter"
     },
     {
@@ -808,7 +708,7 @@
         "alt": "glass-city"
     },
     {
-        "title": "G Monster",
+        "title": "GMonster",
         "alt": "gmonster"
     },
     {
@@ -842,6 +742,10 @@
     {
         "title": "Grindcraft",
         "alt": "grindcraft"
+    },
+    {
+        "title": "Grow A Garden",
+        "alt": "growagarden"
     },
     {
         "title": "Hacker Type",
@@ -896,6 +800,10 @@
         "alt": "hill-climb-racing"
     },
     {
+        "title": "Horror Among Us",
+        "alt": "horror-amongus"
+    },
+    {
         "title": "Hungry Lamu",
         "alt": "hungry-lamu"
     },
@@ -920,8 +828,36 @@
         "alt": "idledices"
     },
     {
+        "title": "Idle Factory Empire",
+        "alt": "idle-factory-empire"
+    },
+    {
+        "title": "Idle Hotel Empire",
+        "alt": "idle-hotel-empire"
+    },
+    {
+        "title": "Idle Hypermart Empire",
+        "alt": "idle-hypermart-empire"
+    },
+    {
+        "title": "Idle Megamall Empire",
+        "alt": "idle-megamall-empire"
+    },
+    {
+        "title": "Idle Mining Empire",
+        "alt": "idle-mining-empire"
+    },
+    {
+        "title": "Idle Mole Empire",
+        "alt": "idle-mole-empire"
+    },
+    {
         "title": "Idle Shark",
         "alt": "idle-shark"
+    },
+    {
+        "title": "Idle Town Billionaire",
+        "alt": "idle-town-billionaire"
     },
     {
         "title": "Impossible Quiz",
@@ -937,7 +873,7 @@
     },
     {
         "title": "Iron Dash",
-        "alt": "iron dash"
+        "alt": "iron-dash"
     },
     {
         "title": "Jetpack Joyride",
@@ -996,7 +932,7 @@
         "alt": "linerider"
     },
     {
-        "title": "LTF 3",
+        "title": "LTF3",
         "alt": "ltf3"
     },
     {
@@ -1028,7 +964,7 @@
         "alt": "matrixrampage"
     },
     {
-        "title": "MC 2D",
+        "title": "MC2D",
         "alt": "mc2d"
     },
     {
@@ -1076,7 +1012,7 @@
         "alt": "minesweeper"
     },
     {
-        "title": "Miniputt",
+        "title": "Mini Putt",
         "alt": "miniputt"
     },
     {
@@ -1124,7 +1060,7 @@
         "alt": "ninja"
     },
     {
-        "title": "Ninja vs Evil Corp",
+        "title": "Ninja Vs Evil Corp",
         "alt": "ninjavsevilcorp"
     },
     {
@@ -1140,6 +1076,10 @@
         "alt": "ns-shaft"
     },
     {
+        "title": "Observation Duty",
+        "alt": "observation-duty"
+    },
+    {
         "title": "Offline Paradise",
         "alt": "OfflineParadise"
     },
@@ -1148,11 +1088,11 @@
         "alt": "om-bounce"
     },
     {
-        "title": "Osu!",
+        "title": "OSU!",
         "alt": "osu!"
     },
     {
-        "title": "Out of Ctrl",
+        "title": "Out Of Ctrl",
         "alt": "out-of-ctrl"
     },
     {
@@ -1160,7 +1100,7 @@
         "alt": "overwatch"
     },
     {
-        "title": "OVO",
+        "title": "Ovo",
         "alt": "ovo"
     },
     {
@@ -1168,12 +1108,116 @@
         "alt": "pandemic2"
     },
     {
-        "title": "Papas Burgeria",
+        "title": "Papa's Burgeria",
         "alt": "papasburgeria"
     },
     {
-        "title": "Starlink Client",
-        "alt": "starlink"
+        "title": "Papa's Pizzaria",
+        "alt": "papaspizzaria"
+    },
+    {
+        "title": "Paper.io 2",
+        "alt": "paperio2"
+    },
+    {
+        "title": "Papery Planes",
+        "alt": "papery-planes"
+    },
+    {
+        "title": "Particle Clicker",
+        "alt": "particleclicker"
+    },
+    {
+        "title": "Particle Clicker",
+        "alt": "particle-clicker"
+    },
+    {
+        "title": "PIClient",
+        "alt": "piclient"
+    },
+    {
+        "title": "Pigeon Ascent",
+        "alt": "pigeon-ascent"
+    },
+    {
+        "title": "Pixel Gun Survival",
+        "alt": "pixel-gun-survival"
+    },
+    {
+        "title": "Planet Life",
+        "alt": "planetlife"
+    },
+    {
+        "title": "Plants Vs Zombies 1",
+        "alt": "plants-vs-zombies- 1"
+    },
+    {
+        "title": "Polybranch",
+        "alt": "polybranch"
+    },
+    {
+        "title": "Polytrack OG",
+        "alt": "polytrack-og"
+    },
+    {
+        "title": "Poom",
+        "alt": "poom"
+    },
+    {
+        "title": "Popcat Classic",
+        "alt": "popcat-classic"
+    },
+    {
+        "title": "Portal Flash",
+        "alt": "portalflash"
+    },
+    {
+        "title": "Precision Client",
+        "alt": "precision-client"
+    },
+    {
+        "title": "Protektor",
+        "alt": "protektor"
+    },
+    {
+        "title": "Push The Square",
+        "alt": "push-the-square"
+    },
+    {
+        "title": "Push Your Luck",
+        "alt": "push-your-luck"
+    },
+    {
+        "title": "Rabbit Samurai",
+        "alt": "rabbit-samurai"
+    },
+    {
+        "title": "Rabbit Samurai 2",
+        "alt": "rabbit-samurai2"
+    },
+    {
+        "title": "Rainbow FR",
+        "alt": "rainbowfr"
+    },
+    {
+        "title": "Repo",
+        "alt": "repo"
+    },
+    {
+        "title": "Rocket League",
+        "alt": "Rocket-League"
+    },
+    {
+        "title": "Rolling Forests",
+        "alt": "rolling-forests"
+    },
+    {
+        "title": "Run 2",
+        "alt": "run-2"
+    },
+    {
+        "title": "Shape Shootout",
+        "alt": "ShapeShootout"
     },
     {
         "title": "Slope",
@@ -1184,7 +1228,47 @@
         "alt": "slope-2"
     },
     {
-        "title": "Eaglercraft",
-        "alt": "eaglercraft"
+        "title": "Snow Rider 3D",
+        "alt": "snowrider3d"
+    },
+    {
+        "title": "Spiderdude",
+        "alt": "spiderdude"
+    },
+    {
+        "title": "Starlink",
+        "alt": "starlink"
+    },
+    {
+        "title": "Stickman Survival",
+        "alt": "Stickman-Survival"
+    },
+    {
+        "title": "Time Shooter 2",
+        "alt": "timeshooter2"
+    },
+    {
+        "title": "Time Shooter 3",
+        "alt": "timeshooter3"
+    },
+    {
+        "title": "Tomb of the Mask",
+        "alt": "tomb-of-the-mask"
+    },
+    {
+        "title": "Trimps",
+        "alt": "Trimps"
+    },
+    {
+        "title": "Tycoon Factory",
+        "alt": "tycoonfactory"
+    },
+    {
+        "title": "White Room",
+        "alt": "whiteroom"
+    },
+    {
+        "title": "Wordle",
+        "alt": "wordle"
     }
 ]
