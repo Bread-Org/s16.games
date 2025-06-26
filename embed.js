@@ -13,93 +13,39 @@
 
     target.innerHTML = "<p style='text-align: center; font-family: sans-serif; color: #555;'>Loading games...</p>";
 
-    window.imageExtensions = ['.webp', '.png', '.jpg', '.jpeg', '.ico'];
-
-    window.tryNextImageExtension = (imgElement) => {
-        const alt = imgElement.dataset.alt;
-        const apiUrl = imgElement.dataset.apiurl;
-        let extensionsTriedIndex = parseInt(imgElement.dataset.extensionsTriedIndex || '0', 10);
-
-        if (extensionsTriedIndex < window.imageExtensions.length - 1) {
-            extensionsTriedIndex++;
-            imgElement.dataset.extensionsTriedIndex = extensionsTriedIndex;
-            const nextExtension = window.imageExtensions[extensionsTriedIndex];
-
-            let baseImageUrl;
-            if (apiUrl === api2) {
-                baseImageUrl = `https://raw.githack.com/gustambolopez/s16.games/main/images/${alt}`;
-            } else {
-                baseImageUrl = `${apiUrl}/images/${alt}`;
-            }
-            imgElement.src = `${baseImageUrl}.${nextExtension}`;
-        } else {
-            imgElement.onerror = null;
-            imgElement.src = 'https://placehold.co/200x120/cccccc/333333?text=No+Image';
-        }
-    };
-
-    const s16Chunk2Games = [
-        "growagarden", "horror-amongus", "observation-duty", "snowrider3d", "spiderdude",
-        "timeshooter2", "timeshooter3", "tycoonfactory", "whiteroom", "bankrobber",
-        "bankrobber2", "bankrobber3", "bikeobby", "bladeball", "bodycamshooter",
-        "chochocharles", "csdeathmatch", "csparkour", "deathrails", "funnyshooter2"
-    ];
-
-    const makecard = (games, currentApiUrl) => {
-        return games.map(game => {
-            let gameSourceUrl;
-            let initialImageUrl;
-
-            if (s16Chunk2Games.includes(game.alt)) {
-                gameSourceUrl = `https://raw.githack.com/gustambolopez/s16.chunk2/main/g/${game.alt}/index.html`;
-            } else if (currentApiUrl === api2) {
-                gameSourceUrl = `https://raw.githack.com/gustambolopez/s16.games/main/g/${game.alt}/index.html`;
-            } else {
-                gameSourceUrl = `${currentApiUrl}/g/${game.alt}/index.html`;
-            }
-            if (currentApiUrl === api2) {
-                initialImageUrl = `https://raw.githack.com/gustambolopez/s16.games/main/images/${game.alt}.webp`;
-            } else {
-                initialImageUrl = `${currentApiUrl}/images/${game.alt}.webp`;
-            }
-
-            return `
-                <div
-                    onclick="opengame('${gameSourceUrl}', '${game.alt}', '${game.title}')"
-                    style="
-                        cursor: pointer;
-                        background: #ffffff;
-                        border-radius: 12px;
-                        padding: 12px;
-                        margin: 10px;
-                        display: inline-block;
-                        width: 200px;
-                        text-align: center;
-                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                        transition: transform 0.2s ease-in-out;
-                    "
-                    onmouseenter="this.style.transform='scale(1.05)'"
-                    onmouseleave="this.style.transform='scale(1)'"
-                >
-                    <img src="${initialImageUrl}" alt="${game.title} thumbnail" style="width: clamp(50px, 120px, 240px); border-radius:8px; height: 120px; object-fit: cover;"
-                           data-alt="${game.alt}"
-                           data-apiurl="${currentApiUrl}"
-                           data-extensions-tried-index="0"
-                           onerror="tryNextImageExtension(this);" />
-                    <h3 style="margin-top:10px; font-size:18px; color: #333333;">${game.title}</h3>
-                </div>
-            `;
-        }).join("");
+    const makecard = (games, apiUrl) => {
+        return games.map(game => `
+            <div
+                onclick="opengame('${apiUrl}', '${game.alt}', '${game.title}')"
+                style="
+                    cursor: pointer;
+                    background: #ffffff;
+                    border-radius: 12px;
+                    padding: 12px;
+                    margin: 10px;
+                    display: inline-block;
+                    width: 200px;
+                    text-align: center;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    transition: transform 0.2s ease-in-out;
+                "
+                onmouseenter="this.style.transform='scale(1.05)'"
+                onmouseleave="this.style.transform='scale(1)'"
+            >
+                <img src="${apiUrl}/images/${game.alt}.webp" alt="${game.title} thumbnail" style="width: clamp(50px, 120px, 240px); border-radius:8px; height: 120px; object-fit: cover;" onerror="this.onerror=null;this.src='https://placehold.co/200x120/cccccc/333333?text=No+Image';" />
+                <h3 style="margin-top:10px; font-size:18px; color: #333333;">${game.title}</h3>
+            </div>
+        `).join("");
     };
 
     try {
         let allGamesHtml = "";
 
-        const response1 = await fetch(`https://github.com/Bread-Org/s16.games/g.json`);
+        const response1 = await fetch(`${api}/g.json`);
         const games1 = await response1.json();
         allGamesHtml += makecard(games1, api);
 
-        const response2 = await fetch(`https://github.com/Bread-Org/s16.chunk2/g.json`);
+        const response2 = await fetch(`${api2}/g.json`);
         const games2 = await response2.json();
         allGamesHtml += makecard(games2, api2);
 
@@ -133,7 +79,7 @@
                     color: white;
                     border: none;
                     border-radius: 5px;
-                    z-index: 1001;
+                    z-index: 1001; /* Ensure button is above iframe */
                 ">Back to Games</button>
                 <h2 id="gamePageTitle" style="color: #333; margin-top: 60px; margin-bottom: 20px;"></h2>
                 <iframe id="gamePageFrame" style="
@@ -151,13 +97,13 @@
         console.error("Error loading games:", err);
     }
 
-    window.opengame = (gameSourceUrl, alt, title) => {
+    window.opengame = (apiUrl, alt, title) => {
         const gamePageContainer = document.getElementById("gamePageContainer");
         const gamePageFrame = document.getElementById("gamePageFrame");
         const gamePageTitle = document.getElementById("gamePageTitle");
 
         gamePageTitle.textContent = title;
-        gamePageFrame.src = gameSourceUrl;
+        gamePageFrame.src = `${apiUrl}/g/${alt}`;
         gamePageContainer.style.display = "flex";
         document.body.style.overflow = 'hidden';
     };
@@ -166,7 +112,7 @@
         const gamePageContainer = document.getElementById("gamePageContainer");
         const gamePageFrame = document.getElementById("gamePageFrame");
 
-        gamePageFrame.src = "";
+        gamePageFrame.src = ""; 
         gamePageContainer.style.display = "none";
         document.body.style.overflow = '';
     };
