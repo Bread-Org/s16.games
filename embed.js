@@ -1,0 +1,174 @@
+// document.addEventListener("DOMContentLoaded",
+(async () => {
+    const { api, api2, target: selectortarget } = document.currentScript.dataset;
+
+    const target = document.querySelector(selectortarget);
+
+    if (!target) {
+        console.error("Target container not found:", selectortarget);
+        return;
+    }
+
+    let wierdstuff = "";
+
+    target.innerHTML = "<p style='text-align: center; font-family: sans-serif; color: #555;'>Loading games...</p>";
+
+    window.imageExtensions = ['.webp', '.png', '.jpg', '.jpeg', '.ico'];
+
+    window.tryNextImageExtension = (imgElement) => {
+        const alt = imgElement.dataset.alt;
+        const apiUrl = imgElement.dataset.apiurl;
+        let extensionsTriedIndex = parseInt(imgElement.dataset.extensionsTriedIndex || '0', 10);
+
+        if (extensionsTriedIndex < window.imageExtensions.length - 1) {
+            extensionsTriedIndex++;
+            imgElement.dataset.extensionsTriedIndex = extensionsTriedIndex;
+            const nextExtension = window.imageExtensions[extensionsTriedIndex];
+
+            let baseImageUrl;
+            if (apiUrl === api2) {
+                baseImageUrl = `https://raw.githack.com/gustambolopez/s16.games/main/images/${alt}`;
+            } else {
+                baseImageUrl = `${apiUrl}/images/${alt}`;
+            }
+            imgElement.src = `${baseImageUrl}.${nextExtension}`;
+        } else {
+            imgElement.onerror = null;
+            imgElement.src = 'https://placehold.co/200x120/cccccc/333333?text=No+Image';
+        }
+    };
+
+    const s16Chunk2Games = [
+        "growagarden", "horror-amongus", "observation-duty", "snowrider3d", "spiderdude",
+        "timeshooter2", "timeshooter3", "tycoonfactory", "whiteroom", "bankrobber",
+        "bankrobber2", "bankrobber3", "bikeobby", "bladeball", "bodycamshooter",
+        "chochocharles", "csdeathmatch", "csparkour", "deathrails", "funnyshooter2"
+    ];
+
+    const makecard = (games, currentApiUrl) => {
+        return games.map(game => {
+            let gameSourceUrl;
+            let initialImageUrl;
+
+            if (s16Chunk2Games.includes(game.alt)) {
+                gameSourceUrl = `https://raw.githack.com/gustambolopez/s16.chunk2/main/g/${game.alt}/index.html`;
+            } else if (currentApiUrl === api2) {
+                gameSourceUrl = `https://raw.githack.com/gustambolopez/s16.games/main/g/${game.alt}/index.html`;
+            } else {
+                gameSourceUrl = `${currentApiUrl}/g/${game.alt}/index.html`;
+            }
+            if (currentApiUrl === api2) {
+                initialImageUrl = `https://raw.githack.com/gustambolopez/s16.games/main/images/${game.alt}.webp`;
+            } else {
+                initialImageUrl = `${currentApiUrl}/images/${game.alt}.webp`;
+            }
+
+            return `
+                <div
+                    onclick="opengame('${gameSourceUrl}', '${game.alt}', '${game.title}')"
+                    style="
+                        cursor: pointer;
+                        background: #ffffff;
+                        border-radius: 12px;
+                        padding: 12px;
+                        margin: 10px;
+                        display: inline-block;
+                        width: 200px;
+                        text-align: center;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        transition: transform 0.2s ease-in-out;
+                    "
+                    onmouseenter="this.style.transform='scale(1.05)'"
+                    onmouseleave="this.style.transform='scale(1)'"
+                >
+                    <img src="${initialImageUrl}" alt="${game.title} thumbnail" style="width: clamp(50px, 120px, 240px); border-radius:8px; height: 120px; object-fit: cover;"
+                           data-alt="${game.alt}"
+                           data-apiurl="${currentApiUrl}"
+                           data-extensions-tried-index="0"
+                           onerror="tryNextImageExtension(this);" />
+                    <h3 style="margin-top:10px; font-size:18px; color: #333333;">${game.title}</h3>
+                </div>
+            `;
+        }).join("");
+    };
+
+    try {
+        let allGamesHtml = "";
+
+        const response1 = await fetch(`https://github.com/Bread-Org/s16.games/g.json`);
+        const games1 = await response1.json();
+        allGamesHtml += makecard(games1, api);
+
+        const response2 = await fetch(`https://github.com/Bread-Org/s16.chunk2/g.json`);
+        const games2 = await response2.json();
+        allGamesHtml += makecard(games2, api2);
+
+        wierdstuff = `<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 10px;">${allGamesHtml}</div>`;
+        target.innerHTML = wierdstuff;
+
+        const gamePageContainerHtml = `
+            <div id="gamePageContainer" style="
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #fff;
+                z-index: 999;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 20px;
+                box-sizing: border-box;
+            ">
+                <button onclick="closegame()" style="
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    z-index: 1001;
+                ">Back to Games</button>
+                <h2 id="gamePageTitle" style="color: #333; margin-top: 60px; margin-bottom: 20px;"></h2>
+                <iframe id="gamePageFrame" style="
+                    width: 100%;
+                    flex-grow: 1;
+                    border: none;
+                    border-radius: 8px;
+                " allowfullscreen></iframe>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', gamePageContainerHtml);
+
+    } catch (err) {
+        target.innerHTML = "<p style='color:red; text-align: center; font-family: sans-serif;'>Error loading games. Please try again later.</p>";
+        console.error("Error loading games:", err);
+    }
+
+    window.opengame = (gameSourceUrl, alt, title) => {
+        const gamePageContainer = document.getElementById("gamePageContainer");
+        const gamePageFrame = document.getElementById("gamePageFrame");
+        const gamePageTitle = document.getElementById("gamePageTitle");
+
+        gamePageTitle.textContent = title;
+        gamePageFrame.src = gameSourceUrl;
+        gamePageContainer.style.display = "flex";
+        document.body.style.overflow = 'hidden';
+    };
+
+    window.closegame = () => {
+        const gamePageContainer = document.getElementById("gamePageContainer");
+        const gamePageFrame = document.getElementById("gamePageFrame");
+
+        gamePageFrame.src = "";
+        gamePageContainer.style.display = "none";
+        document.body.style.overflow = '';
+    };
+
+})();
