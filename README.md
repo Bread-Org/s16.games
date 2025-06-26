@@ -16,16 +16,8 @@ To use s16.games simply put this code in your html.
   src="https://cdn.jsdelivr.net/gh/Bread-org/s16.games/embed.js"
 
   <!-- IMPORTANT: DO NOT ADD A SLASH AT THE END OF THIS ATTRIBUTE -->
-  data-api="https://bread-org.github.io/s16.games"
-  data-api2="https://Bread-org.github.io/s16.chunk2"
-
-  <!-- IF IT DOESNT WORK TRY USING THIS ONE INSTEAD -->
-  data-api="https://raw.githack.com/Bread-org/s16.games/main"
-  data-api2="https://raw.githack.com/Bread-org/s16.chunk2/main"
-
-  <!-- IF THAT DOESNT WORK TRY USING THIS ONE INSTEAD -->
-  data-api="https://cdn.githubraw.com/Bread-org/s16.games/main/"
-  data-api2="https://cdn.githubraw.com/Bread-org/s16.chunk2/main/"
+  data-api="./"
+  data-api2="./"
 
   data-target="#gameContainer"
 ></script>
