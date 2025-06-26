@@ -2,7 +2,7 @@
 
 A free and easy to use gamecdn made for UBG sites and proxies.
 > [!IMPORTANT]
-> If ur gonna use it in your site make sure to give credits! this repository is published under the Apache Public License v2 so you are required to.
+> If ur gonna use it in your site make sure to give credits! this repository is published under the Apache Public License v2 so you are required to (expect a DMCA if you claim it as yours).
 
 ## But, How do i use it?
 > [!WARNING]
